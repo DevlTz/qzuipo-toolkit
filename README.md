@@ -72,7 +72,7 @@ Features:
 ---
 
 ## License 📜
-**🌐 MIT License**
+**🌐 GPL3.0 license**
 **👨💻 Maintainer: [r3qu1em]**
 
 **📧 Contact: [kaua.dovale@proton.me]**
