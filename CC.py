@@ -50,9 +50,6 @@ def caesar_cipher_decrypt(ciphertext, shift):
     # Decrypting is the reverse of encrypting: use the negative of the original shift.
     return caesar_cipher_encrypt(ciphertext, -shift)
 
-def 
-
-
 def main():
 
     #Main function that runs the cipher application.
