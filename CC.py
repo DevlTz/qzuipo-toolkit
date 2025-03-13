@@ -50,6 +50,9 @@ def caesar_cipher_decrypt(ciphertext, shift):
     # Decrypting is the reverse of encrypting: use the negative of the original shift.
     return caesar_cipher_encrypt(ciphertext, -shift)
 
+def 
+
+
 def main():
 
     #Main function that runs the cipher application.
@@ -109,3 +112,16 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+
+
+#Things that need to be in there.
+
+# -> After Decrypt - Consider if the user want to encrypt another thing
+# -> Try brute force or consistent decrypt this
+# -> Vignere Cipher
+# -> Hash 256
+# -> Better Interface
+# -> Credits on sublines
+# -> Install dependencies alone 
+# - > Improve the crypt system.
