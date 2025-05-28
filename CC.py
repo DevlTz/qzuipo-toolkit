@@ -15,14 +15,14 @@ def display_welcome():
 
 def caesar_cipher_encrypt(plaintext, shift):
    # Encrypts the given plaintext using the Caesar Cipher.
-    
+
     #Parameters:
      #   plaintext (str): The text to be encrypted.
       #  shift (int): The number of positions each letter will be shifted.
-    
+
     #Returns:
     #    str: The encrypted text.
-    
+
     encrypted_text = ""
     for char in plaintext:
         if char.isalpha():  # Check if the character is a letter
@@ -40,55 +40,35 @@ def caesar_cipher_encrypt(plaintext, shift):
 def caesar_cipher_decrypt(ciphertext, shift):
 
     #Decrypts the given ciphertext using the Caesar Cipher.
-    
+
    # Parameters:
      #   ciphertext (str): The text to be decrypted.
     #    shift (int): The number of positions that were used to shift the original text.
-    
+
     #Returns:
         #str: The decrypted text.
     # Decrypting is the reverse of encrypting: use the negative of the original shift.
     return caesar_cipher_encrypt(ciphertext, -shift)
-
-def main():
-
-    #Main function that runs the cipher application.
-    #It prompts the user to choose between encryption and decryption, then processes the input accordingly.
-
-    # Display the welcome message.
-    display_welcome()
-   
-    # Select the Cryptograph Type
-
-    # /////// --------------------------------> Updates tomorrow <------------------------------ //////
-    # print ("\n Type a Cryptograpth Type:")
-    # if option not in [types]:
-    #   print("Sorry, we don't have support for this Type yet")
-    #   return
-
-
-
-
-     # Present the user with options to either encrypt or decrypt text.
+def select_option():
     print("\nSelect an option:")
     print("1. Encrypt text using the Caesar Cipher")
     print("2. Decrypt text using the Caesar Cipher")
-    
+
     # Read the user's choice.
     option = input("Enter the number corresponding to your choice: ")
-    
+
     # Validate the user's choice.
     if option not in ['1', '2']:
         print("Invalid option selected. Please restart the program and choose either 1 or 2.")
         return
-    
+
 
     # Prompt the user to enter the text.
     text = input("\nEnter the text: ")
     if not text:
         print(empty_message)
         return
-    
+
     # Prompt the user to enter the shift key and handle invalid inputs.
     try:
         shift = int(input("Enter the key (an integer) for the shift: "))
@@ -105,7 +85,34 @@ def main():
         result = caesar_cipher_decrypt(text, shift)
         print("\nDecrypted text:", result)
 
-# Entry point of the script.
+
+def get_text(text):
+
+
+def main():
+
+    #Main function that runs the cipher application.
+    #It prompts the user to choose between encryption and decryption, then processes the input accordingly.
+
+    # Display the welcome message.
+    display_welcome()
+
+    # Select the Cryptograph Type
+
+    # /////// --------------------------------> Updates tomorrow <------------------------------ //////
+    types = input("\n Type a Cryptograpth Type: ")
+
+    if types == 'Caesar':
+    return select_option(caesee
+
+    if types == 'Vignnere':
+
+    if option not in [types]:
+       print("Sorry, we don't have support for this Type yet")
+       return
+
+     # Present the user with options to either encrypt or decrypt text.
+   # Entry point of the script.
 if __name__ == "__main__":
     main()
 
@@ -120,5 +127,5 @@ if __name__ == "__main__":
 # -> Hash 256
 # -> Better Interface
 # -> Credits on sublines
-# -> Install dependencies alone 
+# -> Install dependencies alone
 # - > Improve the crypt system.
