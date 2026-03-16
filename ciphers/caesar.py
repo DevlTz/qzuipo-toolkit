@@ -1,4 +1,4 @@
-def caesar_cipher_encrypt(plaintext, shift):
+def encrypt(plaintext, shift):
    # Encrypts the given plaintext using the Caesar Cipher.
 
     #Parameters:
@@ -7,9 +7,10 @@ def caesar_cipher_encrypt(plaintext, shift):
 
     #Returns:
     #    str: The encrypted text.
-
+    shift = int(shift) 
     encrypted_text = ""
     for char in plaintext:
+        
         if char.isalpha():  # Check if the character is a letter
             # Determine the base ASCII code based on whether the character is uppercase or lowercase
             shift_base = ord('A') if char.isupper() else ord('a')
@@ -22,7 +23,7 @@ def caesar_cipher_encrypt(plaintext, shift):
             encrypted_text += char
     return encrypted_text
 
-def caesar_cipher_decrypt(ciphertext, shift):
+def decrypt(ciphertext, shift):
 
     #Decrypts the given ciphertext using the Caesar Cipher.
 
@@ -33,4 +34,4 @@ def caesar_cipher_decrypt(ciphertext, shift):
     #Returns:
         #str: The decrypted text.
     # Decrypting is the reverse of encrypting: use the negative of the original shift.
-    return caesar_cipher_encrypt(ciphertext, -shift)
+    return encrypt(ciphertext, -int(shift))
